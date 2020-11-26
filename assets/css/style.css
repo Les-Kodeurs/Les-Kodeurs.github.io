@@ -1,0 +1,23 @@
+/* Import */
+
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
+
+/* Menu de navigation */
+.nav nav ul .btn{
+    list-style-type: none;
+    display: inline;
+}
+.nav nav ul .btn a{
+    /* color: #0a7075; */
+    text-decoration: none;
+}
+.logo{
+    width: 10px;
+    height: auto;
+}
+
+/* Autres */
+body{
+    margin: 0;
+    font-family: Montserrat;
+}
