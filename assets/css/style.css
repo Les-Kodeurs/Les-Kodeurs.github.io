@@ -3,6 +3,8 @@
 :root {
     font-size: 20px;
     font-family: Montserrat;
+    word-spacing: 0.3rem;
+    letter-spacing: 0.1rem;
 }
 
 body {
@@ -12,12 +14,28 @@ body {
     min-height: 100vh;
 }
 
+header {
+    background-color: beige;
+}
+
 main {
     flex-grow: 1;
 }
 
 header, main, footer {
     flex-shrink: 0;
+    margin: 0.2rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+h1,
+h2,
+h3 {
+    text-decoration: underline;
 }
 
 /*
