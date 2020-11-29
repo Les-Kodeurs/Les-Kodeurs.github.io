@@ -36,6 +36,7 @@ h1,
 h2,
 h3 {
     text-decoration: underline;
+    padding: 0.3rem;
 }
 
 /*
