@@ -1,23 +1,84 @@
-/* Import */
-
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
 
-/* Menu de navigation */
-.nav nav ul .btn{
-    list-style-type: none;
-    display: inline;
+:root {
+    font-size: 20px;
+    font-family: Montserrat;
+    word-spacing: 0.3rem;
+    letter-spacing: 0.1rem;
 }
-.nav nav ul .btn a{
-    /* color: #0a7075; */
-    text-decoration: none;
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 100vh;
 }
+
+header {
+    background-color: beige;
+}
+
+main {
+    flex-grow: 1;
+}
+
+header, main, footer {
+    flex-shrink: 0;
+    margin: 0.2rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+h1,
+h2,
+h3 {
+    text-decoration: underline;
+    padding: 0.3rem;
+}
+
+/*
+ * General class
+*/
+
+/* Logo */
 .logo{
-    width: 10px;
+    width: 2em;
     height: auto;
 }
 
-/* Autres */
-body{
-    margin: 0;
-    font-family: Montserrat;
+/* Underline barre style */
+
+.underline {
+    position: relative;
+}
+
+.underline:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    border-radius: 50%;
+}
+
+.underline:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+/*
+ *
+*/
+
+nav>ul{
+    display: flex;
+    justify-content: space-around;
 }
