@@ -75,6 +75,14 @@ h3 {
 }
 
 /*
+ * Help cursor
+*/
+
+.help {
+    cursor: help;
+}
+
+/*
  *
 */
 
